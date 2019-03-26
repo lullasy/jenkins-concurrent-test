@@ -10,7 +10,7 @@ node {
             stage("load") {
                 checkout scm
                 def rola = load "rie.groovy"
-                rola.fujisioro()
+                rola.fujishioro()
             }
         }
     } finally {
