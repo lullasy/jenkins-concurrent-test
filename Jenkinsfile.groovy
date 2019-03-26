@@ -11,7 +11,8 @@ node {
                 checkout scm
                 sh "ls"
                 def rola = load "${workspace}/rie.groovy"
-                rola.fujishioro()
+                //rola.fujishioro()
+                rola.ichigo()
             }
         }
     } finally {

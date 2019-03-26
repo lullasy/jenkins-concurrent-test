@@ -3,4 +3,8 @@ def fujishiro() {
     sleep 10
 }
 
+def ichigo() {
+    echo "sample"
+}
+
 return this
