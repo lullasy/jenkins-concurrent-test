@@ -5,12 +5,12 @@ node {
             stage("first") {
                 echo "${workspace}"
                 echo "pwd.replace : ${pwd().replaceFirst(/@\d+/, "")}"
-                sleep 10
+                sleep 5
             }
             stage("load") {
                 checkout scm
                 sh "ls"
-                rola = load "rie.groovy"
+                def rola = load "${workspace}/rie.groovy"
                 rola.fujishioro()
             }
         }
