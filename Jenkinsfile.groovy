@@ -8,7 +8,8 @@ node {
                 sleep 10
             }
             stage("load") {
-                def rola = load "${workspace}@script/rie.groovy"
+                checkout scm
+                def rola = load "rie.groovy"
                 rola.fujisioro()
             }
         }
