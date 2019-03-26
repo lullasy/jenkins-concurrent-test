@@ -1,4 +1,4 @@
-def fujishiro() {
+def rie() {
     echo "rie-san OK!"
     sleep 10
 }

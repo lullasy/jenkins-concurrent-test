@@ -12,6 +12,7 @@ node {
                 sh "ls"
                 def rola = load "${workspace}/rie.groovy"
                 //rola.fujishioro()
+                rola.rie()
                 rola.ichigo()
             }
         }
