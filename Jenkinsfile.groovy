@@ -1,7 +1,7 @@
 node {
     try {
         lock(mix_env) {
-            def workspace = pwd()
+            def workspace = pwd().replaceFirst(/@\d+/, "")
             stage("first") {
                 echo "${workspace}"
                 echo "pwd.replace : ${pwd().replaceFirst(/@\d+/, "")}"
