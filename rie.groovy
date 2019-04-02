@@ -1,9 +1,8 @@
 def rie() {
     echo "rie-san OK!"
-    def workspace = ${workspace}.replaceFirst(/@\d+/, "")
-    echo "${workspace}"
+    def rworkspace = "${workspace}".replaceFirst(/@\d+/, "")
     sleep 5
-    def yume = load "${workspace}@script/ruka.groovy"
+    def yume = load "${rworkspace}@script/ruka.groovy"
     yume.akari()
 }
 
