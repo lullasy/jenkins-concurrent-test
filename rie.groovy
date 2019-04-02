@@ -1,7 +1,7 @@
 def rie() {
     echo "rie-san OK!"
     echo "${workspace}"
-    sleep 10
+    sleep 5
     def yume = load "${workspace}@script/ruka.groovy"
     yume.akari()
 }
